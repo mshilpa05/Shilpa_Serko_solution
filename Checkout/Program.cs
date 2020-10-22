@@ -6,7 +6,9 @@ namespace Checkout
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Till myTill = new Till();
+            myTill.Scan("AB");
+            Console.WriteLine(myTill.Total());
         }
     }
 }
